@@ -36,5 +36,5 @@ building:
         - ${R_LIBS_USER}
   artifacts:
     paths:
-      - check
+      - *.tar.gz
     expire_in: 30 days
