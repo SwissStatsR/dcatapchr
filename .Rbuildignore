@@ -20,3 +20,5 @@ lib/
 ^pkgdown$
 
 ^check$
+
+^\.gitlab\.yml$
