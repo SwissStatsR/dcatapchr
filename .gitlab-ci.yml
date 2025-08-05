@@ -1,15 +1,6 @@
 image: rhub/r-minimal:4.5.1
 
-variables:
-  GIT_DEPTH: 10
-  # R_LIBS is not empty in rocker images
-  R_LIBS: ${CI_PROJECT_DIR}/ci/lib:${R_LIBS}
-  R_LIBS_USER: ${CI_PROJECT_DIR}/ci/lib
 
-cache:
-  - key: cache-default
-    paths:
-      - ${R_LIBS_USER}
 
 
 stages:
@@ -28,13 +19,6 @@ building:
     - pwd
     - R CMD build ../
     # - R CMD check -o check --no-manual --no-tests *.tar.gz
-  cache:
-    - key: cache-$CI_COMMIT_REF_SLUG
-      fallback_keys:
-        - cache-$CI_DEFAULT_BRANCH
-        - cache-default
-      paths:
-        - ${R_LIBS_USER}
   artifacts:
     paths:
       - check
