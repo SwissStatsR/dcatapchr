@@ -18,3 +18,5 @@ lib/
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+
+^check$
