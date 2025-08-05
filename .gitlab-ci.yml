@@ -1,0 +1,19 @@
+image: rhub/r-minimal:4.5.1
+
+stages:
+  - build
+
+
+building:
+  stage: build
+  only:
+    - main
+  script:
+    - R -q -e "sessionInfo()"
+    - R CMD build .
+    - mkdir -p check
+    - R CMD check -o check --no-manual *.tar.gz
+  artifacts:
+    paths:
+      - check
+    expire_in: 30 days
