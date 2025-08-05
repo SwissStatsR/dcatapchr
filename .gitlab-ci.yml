@@ -10,7 +10,7 @@ building:
     - main
   script:
     - R -q -e "sessionInfo()"
-    - _R_CHECK_FORCE_SUGGESTS_ = false
+    - export _R_CHECK_FORCE_SUGGESTS_ = false
     - R CMD build .
     - mkdir -p check
     - R CMD check -o check --no-manual *.tar.gz
