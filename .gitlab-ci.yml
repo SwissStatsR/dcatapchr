@@ -18,6 +18,7 @@ building:
     - pwd
     - R CMD build ../
     # - R CMD check -o check --no-manual --no-tests *.tar.gz
+    - R CMD check --no-manual --no-tests *.tar.gz
   artifacts:
     paths:
       - check
