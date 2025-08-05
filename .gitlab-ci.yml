@@ -23,9 +23,10 @@ building:
   script:
     - R -q -e "sessionInfo()"
     # - export _R_CHECK_FORCE_SUGGESTS_ = false
+    - pwd
     - R CMD build .
     # - mkdir -p check
-    # - R CMD check -o check --no-manual *.tar.gz
+    # - R CMD check -o check --no-manual --no-tests *.tar.gz
   cache:
     - key: cache-$CI_COMMIT_REF_SLUG
       fallback_keys:
