@@ -3,6 +3,7 @@
 \name{dct_license}
 \alias{dct_license}
 \alias{dct_license2}
+\alias{dct_license3}
 \title{Create a dct:license property in DCAT-AP CH standard}
 \usage{
 dct_license(about = "http://dcat-ap.ch/vocabulary/licenses/terms_open")
@@ -12,6 +13,13 @@ dct_license2(
     "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
     "NonCommercialAllowed-CommercialWithPermission-ReferenceNotRequired",
     "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired")
+)
+
+dct_license3(
+  license = c("http://dcat-ap.ch/vocabulary/licenses/terms_open",
+    "http://dcat-ap.ch/vocabulary/licenses/terms_by",
+    "http://dcat-ap.ch/vocabulary/licenses/terms_ask",
+    "http://dcat-ap.ch/vocabulary/licenses/terms_by_ask")
 )
 }
 \arguments{
@@ -29,5 +37,7 @@ Create a dct:license property in DCAT-AP CH standard
 dct_license(
   about = "http://dcat-ap.ch/vocabulary/licenses/terms_open"
 )
+
+dct_license3("http://dcat-ap.ch/vocabulary/licenses/terms_by")
 
 }

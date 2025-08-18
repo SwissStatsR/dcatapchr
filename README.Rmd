@@ -57,8 +57,8 @@ distributions <- c(
     access_url = dcat_accessURL(
       "https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_xlsx.zip"
     ), 
-    license = dct_license2(
-      "NonCommercialAllowed-CommercialAllowed-ReferenceRequired"
+    license = dct_license3(
+      "http://dcat-ap.ch/vocabulary/licenses/terms_by"
     )
   ),
   
@@ -67,8 +67,8 @@ distributions <- c(
     access_url = dcat_accessURL(
       "https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_px.zip"
     ), 
-    license = dct_license2(
-      "NonCommercialAllowed-CommercialAllowed-ReferenceRequired"
+    license = dct_license3(
+      "http://dcat-ap.ch/vocabulary/licenses/terms_by"
     )
   ),
   
@@ -77,8 +77,8 @@ distributions <- c(
     access_url = dcat_accessURL(
       "https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_csv.zip"
     ), 
-    licence = dct_license2(
-      "NonCommercialAllowed-CommercialAllowed-ReferenceRequired"
+    licence = dct_license3(
+      "http://dcat-ap.ch/vocabulary/licenses/terms_by"
     )
   )
 )

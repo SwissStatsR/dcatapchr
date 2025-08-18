@@ -1,6 +1,6 @@
 Package: dcatapchr
 Title: Create DCAT-AP CH Metadata Files
-Version: 0.0.0.3
+Version: 0.0.1
 Authors@R: 
     person("Sandro", "Burri", , "gibo.gaf@gmail.com", role = c("aut", "cre"))
 Description: Create DCAT-AP CH metadata files, typically in rdf format.

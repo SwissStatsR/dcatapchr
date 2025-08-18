@@ -52,3 +52,22 @@ dct_license2 <- function(license = c(
     "<dct:license>", license, "</dct:license>"
   )
 }
+
+#' @rdname dct_license
+#'
+#' @inheritParams dct_rights
+#'
+#' @examples
+#' dct_license3("http://dcat-ap.ch/vocabulary/licenses/terms_by")
+#'
+#' @export
+dct_license3 <- function(license = c("http://dcat-ap.ch/vocabulary/licenses/terms_open",
+                                     "http://dcat-ap.ch/vocabulary/licenses/terms_by",
+                                     "http://dcat-ap.ch/vocabulary/licenses/terms_ask",
+                                     "http://dcat-ap.ch/vocabulary/licenses/terms_by_ask")) {
+  license <- license[1]
+
+  paste0(
+    "<dct:license", " ", "rdf:resource", "=", add_quotes(license), "/>"
+  )
+}

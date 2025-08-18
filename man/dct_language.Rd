@@ -2,12 +2,17 @@
 % Please edit documentation in R/dct_language.R
 \name{dct_language}
 \alias{dct_language}
+\alias{dct_language2}
 \title{Create a dct:language property in DCAT-AP CH standard}
 \usage{
 dct_language(language = c("de", "fr", "it", "en"))
+
+dct_language2(language = c("FRA", "ITA", "DEU", "ENG"))
 }
 \arguments{
-\item{language}{two-letters abbreviation of the language (one of "de", "fr", "it" or "en")}
+\item{language}{a language code of 3 letters. See
+https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html#dcat-distribution-language and
+https://publications.europa.eu/resource/authority/language}
 }
 \description{
 Create a dct:language property in DCAT-AP CH standard
@@ -17,5 +22,7 @@ dct_language(language = "de")
 dct_language(language = "fr")
 dct_language(language = "it")
 dct_language(language = "en")
+
+dct_language2("ENG")
 
 }

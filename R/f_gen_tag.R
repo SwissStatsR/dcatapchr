@@ -50,7 +50,7 @@ f_gen_tag2 <- function(tag = "dcat:accessURL", rdf_resource = "rdf:resource") {
     stopifnot(length(tag) == 1L)
 
     paste0(
-      "<", tag, " ", rdf_resource, "=", add_quotes(x), " />"
+      "<", tag, " ", rdf_resource, "=", add_quotes(x), "/>"
     )
   }
 }

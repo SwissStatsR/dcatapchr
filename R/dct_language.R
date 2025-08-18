@@ -22,3 +22,25 @@ dct_language <- function(language = c("de", "fr", "it", "en")) {
     "<dct:language>", language, "</dct:language>"
   )
 }
+
+#' @rdname dct_language
+#'
+#' @param language a language code of 3 letters. See
+#'     https://handbook.opendata.swiss/de/content/glossar/bibliothek/dcat-ap-ch.html#dcat-distribution-language and
+#'     https://publications.europa.eu/resource/authority/language
+#'
+#' @examples
+#' dct_language2("ENG")
+#'
+#' @export
+dct_language2 <- function(language = c("FRA", "ITA", "DEU", "ENG")) {
+  language <- language[1]
+  # <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA"/>
+
+  paste0(
+    "<dct:language", " ", "rdf:resource", "=",
+    "\"http://publications.europa.eu/resource/authority/language/",
+    language, "\"",
+    "/>"
+  )
+}

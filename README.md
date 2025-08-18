@@ -48,8 +48,8 @@ distributions <- c(
     access_url = dcat_accessURL(
       "https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_xlsx.zip"
     ), 
-    license = dct_license2(
-      "NonCommercialAllowed-CommercialAllowed-ReferenceRequired"
+    license = dct_license3(
+      "http://dcat-ap.ch/vocabulary/licenses/terms_by"
     )
   ),
   
@@ -58,8 +58,8 @@ distributions <- c(
     access_url = dcat_accessURL(
       "https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_px.zip"
     ), 
-    license = dct_license2(
-      "NonCommercialAllowed-CommercialAllowed-ReferenceRequired"
+    license = dct_license3(
+      "http://dcat-ap.ch/vocabulary/licenses/terms_by"
     )
   ),
   
@@ -68,8 +68,8 @@ distributions <- c(
     access_url = dcat_accessURL(
       "https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_csv.zip"
     ), 
-    licence = dct_license2(
-      "NonCommercialAllowed-CommercialAllowed-ReferenceRequired"
+    licence = dct_license3(
+      "http://dcat-ap.ch/vocabulary/licenses/terms_by"
     )
   )
 )
@@ -79,14 +79,14 @@ distributions
 #>  [2] "  <dcat:Distribution>"                                                                                      
 #>  [3] "    <dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2021-10-14T00:00:00</dct:issued>"
 #>  [4] "    <dcat:accessURL rdf:resource=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_xlsx.zip\" />" 
-#>  [5] "    <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceRequired</dct:license>"                    
+#>  [5] "    <dct:license rdf:resource=\"http://dcat-ap.ch/vocabulary/licenses/terms_by\"/>"                         
 #>  [6] "  </dcat:Distribution>"                                                                                     
 #>  [7] "</dcat:distribution>"                                                                                       
 #>  [8] "<dcat:distribution>"                                                                                        
 #>  [9] "  <dcat:Distribution>"                                                                                      
 #> [10] "    <dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2021-10-14T00:00:00</dct:issued>"
 #> [11] "    <dcat:accessURL rdf:resource=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_px.zip\" />"   
-#> [12] "    <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceRequired</dct:license>"                    
+#> [12] "    <dct:license rdf:resource=\"http://dcat-ap.ch/vocabulary/licenses/terms_by\"/>"                         
 #> [13] "  </dcat:Distribution>"                                                                                     
 #> [14] "</dcat:distribution>"                                                                                       
 #> [15] "<dcat:distribution>"                                                                                        
@@ -94,7 +94,7 @@ distributions
 #> [17] "    <dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2021-10-14T00:00:00</dct:issued>"
 #> [18] "    <dcat:accessURL rdf:resource=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_csv.zip\" />"  
 #> [19] "    <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired</dct:license>"                 
-#> [20] "    <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceRequired</dct:license>"                    
+#> [20] "    <dct:license rdf:resource=\"http://dcat-ap.ch/vocabulary/licenses/terms_by\"/>"                         
 #> [21] "  </dcat:Distribution>"                                                                                     
 #> [22] "</dcat:distribution>"
 
@@ -161,7 +161,7 @@ tail(catalog, n = 20)
 #>  [3] "          <dcat:Distribution>"                                                                                      
 #>  [4] "            <dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2021-10-14T00:00:00</dct:issued>"
 #>  [5] "            <dcat:accessURL rdf:resource=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_px.zip\" />"   
-#>  [6] "            <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceRequired</dct:license>"                    
+#>  [6] "            <dct:license rdf:resource=\"http://dcat-ap.ch/vocabulary/licenses/terms_by\"/>"                         
 #>  [7] "          </dcat:Distribution>"                                                                                     
 #>  [8] "        </dcat:distribution>"                                                                                       
 #>  [9] "        <dcat:distribution>"                                                                                        
@@ -169,7 +169,7 @@ tail(catalog, n = 20)
 #> [11] "            <dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#dateTime\">2021-10-14T00:00:00</dct:issued>"
 #> [12] "            <dcat:accessURL rdf:resource=\"https://www3.ti.ch/DFE/DR/USTAT/allegati/cubo/cubi_POL_01_csv.zip\" />"  
 #> [13] "            <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired</dct:license>"                 
-#> [14] "            <dct:license>NonCommercialAllowed-CommercialAllowed-ReferenceRequired</dct:license>"                    
+#> [14] "            <dct:license rdf:resource=\"http://dcat-ap.ch/vocabulary/licenses/terms_by\"/>"                         
 #> [15] "          </dcat:Distribution>"                                                                                     
 #> [16] "        </dcat:distribution>"                                                                                       
 #> [17] "      </dcat:Dataset>"                                                                                              

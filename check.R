@@ -25,6 +25,10 @@ check()  # check() + test()
 
 # use_pkgdown()
 
+# usethis ---------
+use_r("f_gen_tag")
+use_r("dct_language")
+
 # dct_description issue -------------------------
 # In the txt imported (with readLines) there is an
 # url, https://www3.ti.ch/DFE/DR/USTAT/index.php?fuseaction=temi.dettaglioMeta&metId=1002&p1=40&p2=219&p3=221&proId=220&t=1,
