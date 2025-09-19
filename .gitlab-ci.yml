@@ -7,7 +7,7 @@ stages:
 building:
   stage: build
   image: ${USTAT_R_MIN_IMAGE}
-  tags: [docker, gitlab-org, gitlab-org-docker]
+  tags: [docker]
   only:
     - main
   script:
