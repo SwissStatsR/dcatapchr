@@ -162,6 +162,9 @@ names(y$RDF$Catalog$dataset$Dataset)
 # git push -u upstream main  # push on github/gibonet
 # git push --set-upstream gitlab.ti --all
 
+# To modify the upstream locally
+# git branch --set-upstream-to=gitlab.ti/main
+
 # Does this work?
 # git push --all
 
