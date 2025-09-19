@@ -1,4 +1,6 @@
 # .gitlab-ci-com.yml: used for CI/CD on gitlab.com
+# This is a copy of .gitlab-ci.yml, with the
+# tags commented out
 
 variables:
   USTAT_R_MIN_IMAGE: "rhub/r-minimal:4.5.1"
