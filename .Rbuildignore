@@ -22,3 +22,4 @@ lib/
 ^check$
 
 ^\.gitlab-ci\.yml$
+^\.gitlab-ci-com\.yml$

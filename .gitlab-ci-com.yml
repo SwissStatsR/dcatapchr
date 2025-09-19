@@ -1,0 +1,28 @@
+# .gitlab-ci-com.yml: used for CI/CD on gitlab.com
+
+variables:
+  USTAT_R_MIN_IMAGE: "rhub/r-minimal:4.5.1"
+
+stages:
+  - build
+
+building:
+  stage: build
+  image: ${USTAT_R_MIN_IMAGE}
+#  tags: [docker]
+  only:
+    - main
+  script:
+    - R -q -e "sessionInfo()"
+    - export _R_CHECK_FORCE_SUGGESTS_=FALSE
+    - echo $_R_CHECK_FORCE_SUGGESTS_
+    - mkdir -p check
+    - cd check/
+    - pwd
+    - R CMD build ../
+    # - R CMD check -o check --no-manual --no-tests *.tar.gz
+    - R CMD check --no-manual --no-tests *.tar.gz
+  artifacts:
+    paths:
+      - check
+    expire_in: 30 days
