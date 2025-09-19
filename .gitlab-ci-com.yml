@@ -1,6 +1,8 @@
 # .gitlab-ci-com.yml: used for CI/CD on gitlab.com
 # This is a copy of .gitlab-ci.yml, with the
 # tags commented out
+# In: https://gitlab.com/gibonet/dcatapchr/-/settings/ci_cd#js-general-pipeline-settings
+# --> General pipelines --> CI/CD configuration file --> .gitlab-ci-com.yml
 
 variables:
   USTAT_R_MIN_IMAGE: "rhub/r-minimal:4.5.1"
