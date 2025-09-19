@@ -165,6 +165,9 @@ names(y$RDF$Catalog$dataset$Dataset)
 # To modify the upstream locally
 # git branch --set-upstream-to=gitlab.ti/main
 
+# View the upstream configured for your current branch
+# git branch -vv
+
 # Does this work?
 # git push --all
 
