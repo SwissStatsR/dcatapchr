@@ -1,12 +1,13 @@
-image: rhub/r-minimal:4.5.1
-
+variables:
+  USTAT_R_MIN_IMAGE: "rhub/r-minimal:4.5.1"
 
 stages:
   - build
 
-
 building:
   stage: build
+  image: ${USTAT_R_MIN_IMAGE}
+  tags: [docker]
   only:
     - main
   script:
